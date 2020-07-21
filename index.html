@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/custom_style.css">
+    <link rel="stylesheet" href="dist/bootstrap-4.5.0/css/bootstrap.min.css">
+    <script type="text/javascript" src="dist/bootstrap-4.5.0/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="dist/bootstrap-4.5.0/js/bootstrap.min.js"></script>
+    <title>HiDa</title>
+</head>
+
+<body>
+    <!-- .navbar -->
+    <div class="hida-nav">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse main-menu" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto py-4 py-md-0">
+                    <li class="nav-item  ">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link" href="#">Customers</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link" href="#">Sign In</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link sign-up" href="#">Sign Up</a>
+                    </li>
+                    <li class="nav-item  social-first">
+                        <a class="nav-link social" href="#"><img src="assets/images/facebook.png"></a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link social" href="#"><img src="assets/images/instagram.png"></a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link social" href="#"><img src="assets/images/linkedin.png"></a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link social" href="#"><img src="assets/images/twitter-1.png"></a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+            <div class="collapse navbar-collapse sub-menu" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto py-4 py-md-0">
+                    <li class="nav-item  ">
+                        <a class="nav-link" href="#">Enterprice</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link" href="#">Join a Meeting</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link" href="#">Create a Meeting</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link" href="#">Schedule a Meeting</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+    <!-- /.navbar -->
+    <div class="hida-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-3">
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <h2 class="text-center">Join a Meeting</h2>
+                    <form>
+                        <div class="radio-sec">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="inlineRadio1">Moderator</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Participant</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="inputEmail4">Name</label>
+                                <input type="text" class="form-control" id="Name">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="inputPassword4">Meeting ID</label>
+                                <input type="text" class="form-control" id="meetingid">
+                            </div>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="html">
+                            <label for="html">I agree to Terms of Use and Privacy Policy </label>
+                        </div>
+                        <div class="video-control">
+                            <div class="control-inner">
+                                <div>
+                                    <img src="https://project1011.com/hidanewapplication/img/videooff.png" id="video"
+                                        onclick="change();" />
+                                </div>
+                                <div>
+                                    <img src="https://project1011.com/hidanewapplication/img/audiooff.png" id="mic"
+                                        onclick="changes();" />
+                                </div>
+                            </div>
+
+                            <div><button type="submit" class="btn join-btn">Join Meeting</button></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <p>Copyrights © Kenspire. All Rights Reserved.</p>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script>
+    function change() {
+        var img1 = "https://project1011.com/hidanewapplication/img/videooff.png",
+            img2 = "https://project1011.com/hidanewapplication/img/videoon.png";
+        var imgElement = document.getElementById('video');
+
+        imgElement.src = (imgElement.src === img1) ? img2 : img1;
+    }
+</script>
+<script>
+    function changes() {
+        var img1 = "https://project1011.com/hidanewapplication/img/audiooff.png",
+            img2 = "https://project1011.com/hidanewapplication/img/audioon.png";
+        var imgElement = document.getElementById('mic');
+
+        imgElement.src = (imgElement.src === img1) ? img2 : img1;
+    }
+</script>
+
+</html>
