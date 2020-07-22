@@ -93,6 +93,136 @@ a.banner-btn {
 
 /* Banner Sec */
 
+/* Meat Up Sec */
+.meet-up-sec {
+    text-align: center;
+    padding: 2em 0;
+    max-width: 775px;
+    margin: auto;
+}
+
+.meet-up-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 4em;
+    /* grid-gap: 2em; */
+}
+
+.meet-up-grid p {
+    font-size: 10px;
+    color: #4C4C4C;
+}
+
+.meet-up-grid h4 {
+    font-size: 13px;
+    max-width: 125px;
+    font-weight: 700;
+    margin: 15px auto;
+    color: #4C4C4C;
+}
+
+.meet-up-grid>div {
+    padding: 0 2em;
+}
+
+.meet-up-grid>div {
+    border-right: 4px solid #444;
+}
+
+.meet-up-grid>div:first-child {
+    border: 4px solid #444444;
+    border-bottom: 0;
+    border-top: 0;
+}
+
+.meet-up-sec>p {
+    font-size: 14px;
+    color: #6A6A6A;
+}
+
+.meet-up-sec>h3 {
+    font-size: 29px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+/* Meat Up Sec */
+
+/* Explore section */
+.flex-container {
+    display: flex;
+    overflow: scroll hidden;
+    width: 118%;
+}
+
+.flex-container::-webkit-scrollbar {
+    display: none;
+}
+
+.flex-container img {
+    height: 240px;
+}
+
+.explore-jobs {
+    padding: 2em 0;
+}
+
+.explore-jobs>p {
+    text-align: center;
+    color: #6A6A6A;
+    font-size: 15px;
+}
+
+.explore-jobs>h3 {
+    text-align: center;
+    font-size: 40px;
+    color: #333333;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.explore-jobs-inner {
+    margin-top: 2.5em;
+}
+
+.explore-jobs-inner>h4 {
+    color: #333333;
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 1.2em;
+}
+
+/* Explore section */
+
+/* Perk Section */
+.perk-sec p {
+    color: #434343;
+    font-size: 13px;
+}
+
+.perk-sec img {
+    margin-bottom: 1.5em;
+    height: 60px;
+}
+
+.perk-sec>h3 {
+    text-align: center;
+    font-size: 40px;
+    color: #333333;
+    font-weight: 700;
+    margin-bottom: 1.5em;
+}
+
+.perk-sec {
+    padding: 2em 0;
+    text-align: center;
+}
+
+/* Perk Section */
+
+
 /* Footer  */
 footer .footer-bottom ul,
 footer .footer-bottom ul li {
@@ -155,8 +285,18 @@ footer .footer-top ul>li>a:hover {
 
 /* Footer  */
 
-
 /* Media Queries */
+@media(min-width:1024px) and (max-width:1199px) {
+    .flex-container {
+        width: 105%;
+    }
+}
+
+@media(min-width:768px) and (max-width:1023px) {
+    .flex-container {
+        width: 110%;
+    }
+}
 
 @media (min-width: 576px) {
     .navbar-expand-sm .navbar-nav .nav-link {
@@ -168,6 +308,10 @@ footer .footer-top ul>li>a:hover {
 @media (max-width: 767px) {
     .banner-sec .row {
         flex-direction: column-reverse;
+    }
+
+    .flex-container {
+        width: 110%;
     }
 }
 
