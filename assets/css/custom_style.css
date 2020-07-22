@@ -14,16 +14,6 @@ span.nav-link>span {
     font-size: 15px;
 }
 
-.long-arrow-right {
-    display: block;
-    margin: 30px auto;
-    width: 25px;
-    transform: rotate(135deg);
-    height: 25px;
-    border-top: 2px solid #000;
-    border-left: 2px solid #000;
-}
-
 .long-arrow-right::after {
     content: "";
     display: block;
@@ -145,6 +135,21 @@ a.banner-btn {
     font-weight: 700;
     color: #333333;
     margin-bottom: 5px;
+}
+
+span.divide.long-arrow-right {
+    display: inline-block;
+    width: 50px;
+    transform: rotate(136deg);
+    height: 50px;
+    border-top: 3px solid #444444;
+    border-left: 3px solid #444444;
+    position: absolute;
+    right: -12px;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    margin: auto;
 }
 
 /* Meat Up Sec */
@@ -348,6 +353,7 @@ footer .footer-bottom ul li {
     list-style: none;
     margin: 0;
     display: inline-block;
+    padding: 0;
 }
 
 .footer-top ul,
@@ -409,11 +415,23 @@ footer .footer-top ul>li>a:hover {
     .flex-container {
         width: 105%;
     }
+
+    .navbar-expand-sm .navbar-nav .nav-link {
+        font-size: 12px;
+    }
 }
 
 @media(min-width:768px) and (max-width:1023px) {
     .flex-container {
-        width: 110%;
+        width: 105%;
+    }
+
+    .collapse.navbar-collapse.extra {
+        display: none !important;
+    }
+
+    .small-display {
+        display: none;
     }
 }
 
@@ -430,7 +448,85 @@ footer .footer-top ul>li>a:hover {
     }
 
     .flex-container {
-        width: 110%;
+        width: 104%;
+    }
+
+    .meet-up-grid {
+        grid-template-columns: 1fr;
+        grid-gap: 2em;
+    }
+
+    .meet-up-grid>div:first-child,
+    .meet-up-grid>div {
+        border: 0;
+    }
+
+    span.divide.long-arrow-right {
+        display: none;
+    }
+
+    .meet-up-grid h4 {
+        max-width: 160px;
+    }
+
+    .banner-sec {
+        padding-top: 1em;
+    }
+
+    .banner-sec h2 {
+        font-size: 60px;
+        margin-top: .5em;
+    }
+
+    .banner-sec span {
+        display: block;
+        margin-top: 2em;
+    }
+
+    .explore-jobs>h3,
+    .perk-sec>h3 {
+        font-size: 34px;
+    }
+
+    .quote-inner {
+        margin-top: 5px;
+    }
+
+    .quote-sec {
+        background-size: cover;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .text-right {
+        text-align: center !important;
+    }
+
+    .footer-bottom p {
+        margin-bottom: 10px;
+    }
+
+    .footer-top {
+        padding: 3em 0 2em;
+    }
+
+    li.nav-item.contact-menu {
+        background: #FF7E02;
+        padding: 0 15px;
+        width: max-content;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .navbar-expand-sm .navbar-nav .nav-link {
+        margin: 3px 0;
+    }
+
+    .small-display,
+    .small-display1 {
+        display: none;
     }
 }
 
